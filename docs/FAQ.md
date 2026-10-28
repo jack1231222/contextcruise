@@ -1,15 +1,17 @@
-# 常见问题
+# Frequently Asked Questions
 
-**免费就没有限制吗？** 没有付费数量门槛；实际监测范围受 Codex 跟进规则、数据可读性和机器性能影响，不承诺无限规模。
+**Does free mean unlimited scale?** There is no paid conversation-count limit. Actual scope depends on Codex follow-up rules, readable data, and machine performance. Unlimited scale is not promised.
 
-**“未知”代表什么？** 信息不足、数据过期、同步尚未完成或协议不兼容。不能理解成空闲或已结束。
+**What does Unknown mean?** There is insufficient evidence, stale data, incomplete synchronization, or an incompatible protocol. It does not mean idle or finished.
 
-**为什么和账单不同？** 活动统计来自本机可观察记录，不是官方账单、配额或计费凭证。
+**Why do statistics differ from my bill?** Activity statistics come from locally observable records. They are not official billing, quota, or payment evidence.
 
-**会自动修改 Codex 模型或压缩对话吗？** 不会。语航监测并显示建议，不自动切换模型、速度或恢复原对话。
+**Does the app change Codex models or compact conversations automatically?** No. It monitors records and displays advice. It does not switch the model or speed, compact a conversation, or resume it automatically.
 
-**需要 Python 或连接器吗？** 不需要单独安装。内置运行时已在没有 Homebrew 和 Xcode 的 macOS 13.4.1 干净虚拟机验证通过。
+**Do I need Python or a connector?** No separate installation is required. The embedded runtime is tested in a clean macOS 13.4.1 virtual machine without Homebrew or Xcode.
 
-**支持哪些平台？** 首发只面向 Apple Silicon Mac 与 Codex。Intel、Windows、Linux、Claude 和移动端不在首发范围。
+**Which platforms are supported?** The initial release targets Apple Silicon Macs and Codex. Intel, Windows, Linux, Claude, and mobile devices are outside this release’s scope.
 
-**能否取得源码或重新发行？** 自有源码暂时私有。免费使用官方版本；重新发行等额外权利需另行取得。安装包包含可阅读 Python 脚本，不宣传代码完全不可提取。
+**Can I change the app language?** Yes. Choose English or Simplified Chinese in General & Monitoring settings or the application menu, then quit and reopen the app. New advice follows the selected language. GitHub pages and public documentation use English. Your own titles, source excerpts, custom theme names, and provider-supplied names are preserved as entered. Previously saved advice stays in its original language. A language change does not translate it or issue a paid request.
+
+**Can I obtain the source or redistribute the app?** Proprietary source remains private. Official releases are free to use; additional rights such as redistribution require separate permission. The app includes readable Python scripts and does not claim its code cannot be extracted.

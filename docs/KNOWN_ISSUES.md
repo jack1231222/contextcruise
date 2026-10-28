@@ -1,12 +1,11 @@
-# 当前验证范围与已知限制
+# Tested Scope and Known Limitations
 
-- 当前公开测试版为 `v1.0.0-beta.1`、build 10015。
-- 10015 的 App 与 DMG 已通过 Developer ID 签名、Apple 公证和票据装订；更新附件签名验证、损坏包和错误签名拒绝检查通过。
-- 10015 新增更新前空间检查与安装失败后的重开提示。282 项 Swift 测试通过；同一编译代码的隔离副本完成低空间提示、失败后保全与可见结果、10015→10016 成功重试及只读位置拒绝更新。
-- 空间检查按当前应用与已知更新包体积提供最低预留，只代表检查时点；不保证之后的空间或未来版本展开体积。重开只能确认更新是否完成，原因不明时会明确说明。
-- macOS 13.4.1 的 10014 基线已完成无 Homebrew/Xcode 环境中的安装、运行、界面、四条合成记录，以及两份授权真实记录的脱敏快照读取（计数1、2）。虚拟机没有登录 Apple ID，也没有登录或运行真实 Codex；这不是实时 Codex 工作负载验证。
-- 最终10015也已通过macOS13.4.1安装、签名/Gatekeeper、真实脱敏记录界面、搜索与退出重开验证。尚无完整 macOS／Codex 兼容矩阵；旧基线与本轮隔离副本不代替最终包目标环境核验。
-- 旧有外置 APFS 升级、下载取消、源不可用恢复及未变化的 Python 读取器证据按范围保留；不保证所有文件系统与安装位置。历史全局偏好文件曾变化，不能声称所有偏好逐字节不变。
-- 旧数据只向空的首次使用目录导入，不合并已有数据，不迁移 API 凭证。尚无已验收的一键脱敏诊断导出，反馈请提供最少必要信息。
-
-R2真实记录读取、R3更新异常和R4只读位置补证已经完成，修复的定向独立复审通过。本次公开发布已获具体批准，公开后的 HTTPS 下载与 beta 更新源已通过公开访问核验；稳定渠道尚无正式版。
+- The current bilingual beta is `v1.0.0-beta.2`, build 10020, for Apple Silicon and macOS 13 or later.
+- The final app and DMG have Developer ID signatures, Apple notarization, stapled tickets, and signed Sparkle update metadata.
+- Build 10020 installation, both interface languages, saved language selection, local record reading, search, settings, and quit/reopen were checked on macOS 13.4.1. Test conversations include synthetic records and previously authorized redacted snapshots. The virtual machine has no Apple ID login and does not run a live Codex workload.
+- Earlier real-Codex integration evidence came from macOS 27.0.1. The full macOS/Codex version matrix is not covered. Local protocol changes in Codex may require adapter updates.
+- Disk-space preflight and incomplete-update notices were introduced in build 10015. Their isolated low-space, failure-preservation, retry, and read-only-location tests remain scoped baseline evidence. A minimum reserve is not a guarantee of future free space or every expanded update size.
+- Prior external APFS upgrades, canceled downloads, unavailable-feed recovery, and unchanged runtime evidence remain historical results for those tested conditions. They do not cover every filesystem or installation location.
+- Upgrades preserve the existing data formats. Conversation titles, source text, provider names, and custom theme names are user or source content and may use any language. Previously saved AI advice is shown in its original language. Changing the app language does not translate it or issue a paid request.
+- Legacy import accepts only an empty first-use destination. It does not merge datasets or migrate API credentials. A validated one-click redacted diagnostic export is not available.
+- Beta updates require explicit opt-in. The stable feed intentionally contains no release.

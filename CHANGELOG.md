@@ -1,17 +1,21 @@
-# 更新记录
+# Release Notes
 
-## 1.0.0-beta.1 — 已公开发布
+## 1.0.0-beta.2 · Build 10020
 
-- 免费的 Codex 对话监测，无内购及两条数量限制。
-- 自带 ARM64 Python 运行时的单 App。
-- 独立设置、统计与凭证，AI 默认关闭。
-- 显式旧数据导入，已有目标拒绝覆盖。
-- Sparkle 稳定与测试更新渠道；beta 更新源已公开，稳定渠道尚无正式版。
-- build 10012：Zstandard 按 macOS 13 构建，仅依赖系统运行库；包内检查拒绝高于声明最低系统的二进制依赖。
-- build 10012：App 与 DMG 均通过 Apple 公证；本机安装和外置 APFS 盘的 10011→10012 真实升级通过，设置保留。
+- Selectable English and Simplified Chinese throughout onboarding, menus, settings, monitoring, advice, accessibility labels, import, and update notices. The saved selection applies after reopening the app.
+- English public documentation, issue forms, installer naming, and release notes.
+- New AI advice is requested in the selected app language. Original conversation titles and source excerpts keep their original language.
+- Saved settings, statistics, credentials, and original source records keep their existing storage formats. Previously saved advice remains visible in its original language; changing the app language does not translate it or issue a paid request.
+- Fixes macOS 13 first-use timezone detection and safely handles background workers that exit during communication.
+- The app and DMG use Developer ID signing, Apple notarization, and the existing Sparkle update channel.
 
-- build 10014：修复内置 zstd 定位与旧失败缓存恢复；在 macOS 13.4.1 干净虚拟机完成安装、4 条合成记录、界面与退出重开验证。
+## 1.0.0-beta.1 · Build 10015
 
-公开 HTTPS 下载与 beta 更新源已通过公开访问核验，安装包已可下载；稳定渠道尚无正式版。
+- Free Codex conversation monitoring with an embedded ARM64 Python runtime and no paid conversation limit.
+- Separate settings, statistics, and credentials; optional AI off by default.
+- Explicit allowlisted legacy import that refuses to overwrite existing data.
+- Stable and opt-in beta Sparkle channels. No stable release yet.
+- Pre-update disk-space checks and a notice when an attempted update has not completed after relaunch.
+- Installation, redacted real-record snapshots, search, quit/reopen, and the public 10014-to-10015 Sparkle update passed on a clean macOS 13.4.1 virtual machine.
 
-- build 10015：补充更新前空间检查和安装未完成的重开提示；低空间、失败保全、成功重试与只读位置实测通过。最终macOS13.4.1安装、真实脱敏快照读取与退出重开验证通过。
+Earlier build milestones included a macOS 13-compatible Zstandard binary and recovery from missing embedded-tool paths and older failed timing caches. These historical results do not replace validation of a newer final package.

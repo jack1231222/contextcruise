@@ -1,9 +1,9 @@
-name: Feature request / 功能建议
+name: Feature request
 description: Explain the task and expected improvement.
 body:
   - type: textarea
     id: need
     attributes:
-      label: What problem should this solve? / 想解决什么问题？
+      label: What problem should this solve?
     validations:
       required: true

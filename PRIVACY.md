@@ -1,27 +1,25 @@
-# 隐私说明 / Privacy
+# Privacy Notice
 
-## 本地记录
+## Local records
 
-语航读取用户选择的本机 Codex 日志、目录和状态信息，并在独立应用目录保存设置、索引和统计。为匹配当前用户，适配器会在本机读取账号身份信息；不把身份凭证发送给更新服务或公开反馈入口。监测不修改 Codex 对话、配置或已读状态，也不恢复原对话。
+ContextCruise reads the local Codex logs, catalog, and status information you select. It stores settings, indexes, and derived statistics in its own application directory. The adapter reads account identity locally to match the current user; identity credentials are not sent to update services or public feedback channels. Monitoring does not modify Codex conversations, configuration, or read state, and does not resume a conversation.
 
-语航没有自建用户账号、遥测或营销后台。首次统计会读取必要本地记录；不要向公众提交这些原始材料。
+ContextCruise has no separate user account, telemetry service, or marketing backend. Initial indexing reads the local records it needs. Do not submit these raw records publicly.
 
-## 可选 AI
+## Optional AI analysis
 
-AI 默认关闭。用户配置并启用后，分析所需的对话材料会发送到用户选择的 API 服务。材料可能含对话内容，因此开启前应检查服务地址、隐私条款与预算。API 凭证使用本机钥匙串的语航独立服务保存，不随旧版导入迁移。第三方服务的保存、计费与处理政策由该服务负责。
+AI is off by default. If you configure and enable it, material needed for analysis is sent to the API provider you select. This may include conversation content. Check the endpoint, provider privacy terms, and budget before enabling analysis. Necessary material is redacted locally; material that cannot be reliably redacted is not sent.
 
-## 更新
+API credentials are stored in a dedicated local macOS Keychain service. Legacy import does not copy credentials, API configurations, or request ledgers. The provider is responsible for its own retention, processing, and billing policies.
 
-启用更新检查时，程序连接 GitHub Pages 更新源及 GitHub Releases 下载服务。服务会收到正常网络请求信息，例如 IP 地址。语航不把对话正文、账号 token 或统计库加入更新请求；Sparkle 系统概况上报不启用。当前版本已启用更新检查入口；beta 更新源已公开并通过公开访问核验，稳定渠道尚无正式版。是否允许自动检查由首次提示征询，自动安装关闭。
+New analysis is requested in the selected app language, English or Simplified Chinese. Existing advice and source evidence are preserved during upgrades. Previously saved advice is shown in its original language. Changing the app language does not translate it or issue a paid request. Original conversation content remains in its original language.
 
-## 用户主动反馈
+## Updates
 
-反馈由用户主动提交。只填写系统、App/Codex 版本、可复现步骤及脱敏截图。当前没有经过验收的一键诊断导出，暂不提供“导出后必然安全”的保证。不要上传原始日志、数据库、auth.json、Cookie、API Key 或完整文件路径。
+Enabled update checks contact GitHub Pages and GitHub Releases. These services receive ordinary request information, such as an IP address. ContextCruise does not add conversation text, account tokens, or statistics databases to update requests. Sparkle system-profile reporting is disabled.
 
-## English
+Automatic checking is a user choice. Automatic installation is off. Beta updates require explicit opt-in and use a separate feed. The beta feed is public; no stable release is available yet.
 
-ContextCruise processes selected local Codex records and stores its settings and derived statistics locally. Account identity is read locally to match the current user, not transmitted to the update service. Monitoring does not edit Codex conversations, configuration, read state, or resume a conversation.
+## Feedback you submit
 
-There is no ContextCruise account, telemetry, or marketing backend. Optional AI is off by default. If configured and enabled, analysis material, potentially including conversation content, is sent to the selected API provider. Credentials are stored in a dedicated local Keychain service and are not imported from older versions.
-
-Enabled update checks contact GitHub Pages and GitHub Releases. These services receive ordinary request metadata such as IP addresses. Conversation text, credentials, and statistics databases are not added to update requests; Sparkle system-profile reporting is disabled. Bug reports are submitted by the user. Do not attach raw private records or credentials.
+Feedback is submitted by you. Share only system and app/Codex versions, reproducible steps, and redacted screenshots. The app does not provide a validated one-click redacted diagnostic export. Do not assume an exported bundle is safe to share. Do not attach raw logs, databases, auth.json, cookies, API keys, or complete personal paths.
