@@ -1,10 +1,10 @@
 # Install and use
 
-The current candidate, build 10015, is signed and notarized; update-failure and recovery checks passed. Final installation, redacted real-record reading and quit/reopen checks also passed on macOS 13.4.1. The build 10014 checks below are retained baseline evidence.
+The current public beta, build 10015, is signed and notarized; update-failure and recovery checks passed. Final installation, redacted real-record reading and quit/reopen checks also passed on macOS 13.4.1. The build 10014 checks below are retained baseline evidence.
 
-Build 10014 passed installation, embedded-runtime, synthetic-record and UI checks in a clean macOS 13.4.1 virtual machine. Existing real-Codex and external-APFS Sparkle upgrade evidence is retained as described in the known limitations. Public downloads are not available yet.
+Build 10014 passed installation, embedded-runtime, synthetic-record and UI checks in a clean macOS 13.4.1 virtual machine. Existing real-Codex and external-APFS Sparkle upgrade evidence is retained as described in the known limitations. Public downloads are available.
 
-1. Download the Apple Silicon DMG from the official repository Releases after a validated release becomes available. Check that release's tested macOS versions.
+1. Download the Apple Silicon DMG from the official repository Releases. Check that release's tested macOS versions.
 2. Open the DMG and drag ContextCruise into Applications. Quit an older running version before launching the new one.
 3. Choose your local Codex data directory, usually `~/.codex`. The system picker can show hidden folders. The records, catalog, account identity, and local status protocol must remain compatible.
 4. Let the initial scan complete. Unknown or syncing does not mean a conversation has ended. The follow-up list is not a list of every historical conversation.
@@ -12,7 +12,7 @@ Build 10014 passed installation, embedded-runtime, synthetic-record and UI check
 
 Optional AI analysis is off by default. Configure a provider, credentials, model, and budget before enabling it. Your provider charges API fees. Local statistics do not make AI requests.
 
-After release validation, Sparkle provides manual and optional automatic update checks. Automatic installation is off. Beta updates are opt-in and use a separate feed. Build 10015 contains the production feed addresses, but those feeds are not published yet. Never bypass signature or Gatekeeper failures.
+Sparkle provides manual and optional automatic update checks. Automatic installation is off. Beta updates are opt-in and use a separate feed. Build 10015 contains the production feed addresses, and the beta feed is public and passed public-access checks; no stable release is available yet. Never bypass signature or Gatekeeper failures.
 
 Before connecting Codex for the first time, the application menu can import allowlisted settings and compatible timing statistics from an older local version. It refuses to overwrite a nonempty destination, leaves the source intact, and does not copy API credentials, configuration, or request ledgers. Quit and reopen after import. Merging existing datasets is not supported.
 

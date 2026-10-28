@@ -7,7 +7,7 @@
 10014 基线在 macOS 13.4.1 干净虚拟机中的真实界面；使用四条合成测试记录，AI 分析关闭。
 
 
-**当前候选为 build 10015：App 与 DMG 已签名、公证，更新异常修复与隔离升级验证通过。最终包的 macOS 13.4.1 安装、真实脱敏记录读取、搜索与退出重开验证通过，尚未公开发布。** 公开下载和在线更新渠道还需发布后验证。
+**当前公开测试版为 build 10015：App 与 DMG 已签名、公证，更新异常修复与隔离升级验证通过。最终包的 macOS 13.4.1 安装、真实脱敏记录读取、搜索与退出重开验证通过，已公开发布。** 公开 HTTPS 下载与 beta 更新源已通过公开访问核验，稳定渠道尚无正式版。
 
 - Apple Silicon Mac；最低系统要求为 macOS 13。已在 macOS 13.4.1 干净虚拟机验证内置运行时、安装、合成记录读取和界面操作；10014 还读取了两份授权真实记录的脱敏快照；未在虚拟机运行实时 Codex。10015 也已通过该系统的最终包安装、真实脱敏快照读取与退出重开复核。其余系统与 Codex 版本组合未全部覆盖。
 - 一个 App，自带 Python 运行时，无需自行安装 Python、Homebrew 或连接器。
@@ -19,7 +19,7 @@
 
 [中文安装说明](docs/安装与使用.md) · [English](README.en.md) · [隐私](PRIVACY.md) · [常见问题](docs/FAQ.md) · [已知限制](docs/KNOWN_ISSUES.md)
 
-正式候选通过签名、公证和安装验收后，安装包只从本仓库 [Releases](https://github.com/jack1231222/contextcruise/releases) 提供。不会要求关闭 Gatekeeper 或删除隔离标记。
+安装包只从本仓库 [Releases](https://github.com/jack1231222/contextcruise/releases) 提供。不会要求关闭 Gatekeeper 或删除隔离标记。
 
 普通问题使用 [Issues](https://github.com/jack1231222/contextcruise/issues)。只提供版本、系统与脱敏后的步骤，不上传完整对话、auth.json、数据库、API Key 或个人路径。安全问题见 [SECURITY.md](SECURITY.md)。
 
