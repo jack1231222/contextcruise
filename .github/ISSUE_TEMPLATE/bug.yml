@@ -1,0 +1,25 @@
+name: Bug report / 问题反馈
+description: Report a reproducible problem without private records.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "不要上传对话、数据库、auth.json、凭据或私人路径。Do not attach private records or credentials."
+  - type: input
+    id: versions
+    attributes:
+      label: App build, Codex version, macOS version and chip
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps / 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result / 预期与实际
+    validations:
+      required: true
