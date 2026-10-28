@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>ContextCruise stable releases</title>
+    <description>No stable release is available yet. Beta updates require explicit opt-in.</description>
+  </channel>
+</rss>
