@@ -4,6 +4,8 @@ ContextCruise includes third-party components whose own licenses remain in force
 
 | Component | Version / source | License location in the app |
 |---|---|---|
+| AgentSpeed statistical core | zoefix/agent-speed, commit 384ce020 | Runtime/licenses/AgentSpeed/LICENSE (MIT) |
+| Embedded Zstandard decompression code | Facebook / Meta, 1.5.7 | Runtime/licenses/Zstandard/LICENSE (BSD) |
 | Sparkle | 2.10.1, sparkle-project/Sparkle | Runtime/licenses/Sparkle/LICENSE |
 | CPython | 3.12.13 | Runtime/licenses/Python/LICENSE.txt |
 | python-build-standalone | 20260623 matching distribution | Runtime/licenses/python-build-standalone-20260623/ |

@@ -1,5 +1,12 @@
 # Release Notes
 
+## 11.21.45 statistics beta (build 10022)
+
+- Compact menu bar and full window share conversation cards, counts, search, and detail views.
+- One-line overview adds a five-minute output trend alongside live rates, logged daily usage, and machine traffic. Missing observations remain gaps.
+- Includes per-conversation performance, cost estimates, tool and subagent breakdowns, global comparisons, and history.
+- Requires Apple Silicon and macOS 14 or later. This edition uses Simplified Chinese.
+
 ## 1.0.0-beta.2 · Build 10020
 
 - Selectable English and Simplified Chinese throughout onboarding, menus, settings, monitoring, advice, accessibility labels, import, and update notices. The saved selection applies after reopening the app.

@@ -1,17 +1,9 @@
-# Frequently Asked Questions
+# FAQ
 
-**Does free mean unlimited scale?** There is no paid conversation-count limit. Actual scope depends on Codex follow-up rules, readable data, and machine performance. Unlimited scale is not promised.
+**Which version should I download?** Use 11.21.45 for the statistics interface on Apple Silicon with macOS 14 or later. The previous 1.0.0 beta 2 supports English and macOS 13.
 
-**What does Unknown mean?** There is insufficient evidence, stale data, incomplete synchronization, or an incompatible protocol. It does not mean idle or finished.
+**Does it charge my API account?** Local monitoring does not issue model requests. Cost panels estimate API-equivalent spending from usage.
 
-**Why do statistics differ from my bill?** Activity statistics come from locally observable records. They are not official billing, quota, or payment evidence.
+**Why does the trend have gaps?** Only observed samples are drawn. An unavailable interval is not zero output.
 
-**Does the app change Codex models or compact conversations automatically?** No. It monitors records and displays advice. It does not switch the model or speed, compact a conversation, or resume it automatically.
-
-**Do I need Python or a connector?** No separate installation is required. The embedded runtime is tested in a clean macOS 13.4.1 virtual machine without Homebrew or Xcode.
-
-**Which platforms are supported?** The initial release targets Apple Silicon Macs and Codex. Intel, Windows, Linux, Claude, and mobile devices are outside this release’s scope.
-
-**Can I change the app language?** Yes. Choose English or Simplified Chinese in General & Monitoring settings or the application menu, then quit and reopen the app. New advice follows the selected language. GitHub pages and public documentation use English. Your own titles, source excerpts, custom theme names, and provider-supplied names are preserved as entered. Previously saved advice stays in its original language. A language change does not translate it or issue a paid request.
-
-**Can I obtain the source or redistribute the app?** Proprietary source remains private. Official releases are free to use; additional rights such as redistribution require separate permission. The app includes readable Python scripts and does not claim its code cannot be extracted.
+**What do the network arrows measure?** Machine-wide download and upload rates while traffic sampling is enabled.

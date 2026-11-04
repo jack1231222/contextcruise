@@ -1,25 +1,7 @@
-# Privacy Notice
+# Privacy notice
 
-## Local records
+ContextCruise reads local records from the Codex data folder you select. Settings, indexes, and derived history are saved in the application's data directory. Additional local sources can be selected in Settings. Machine traffic monitoring is optional and measures byte counts and rates.
 
-ContextCruise reads the local Codex logs, catalog, and status information you select. It stores settings, indexes, and derived statistics in its own application directory. The adapter reads account identity locally to match the current user; identity credentials are not sent to update services or public feedback channels. Monitoring does not modify Codex conversations, configuration, or read state, and does not resume a conversation.
+The statistics edition does not start the paid semantic analysis worker. Costs are local estimates. Optional online functions include update and pricing checks and reporting to a compatible HTTPS service you select. Reporting is off by default. Preview the report fields before enabling transmission. Connection credentials are handled via Keychain. Sparkle contacts the update feed when you check for updates or enable automatic checks.
 
-ContextCruise has no separate user account, telemetry service, or marketing backend. Initial indexing reads the local records it needs. Do not submit these raw records publicly.
-
-## Optional AI analysis
-
-AI is off by default. If you configure and enable it, material needed for analysis is sent to the API provider you select. This may include conversation content. Check the endpoint, provider privacy terms, and budget before enabling analysis. Necessary material is redacted locally; material that cannot be reliably redacted is not sent.
-
-API credentials are stored in a dedicated local macOS Keychain service. Legacy import does not copy credentials, API configurations, or request ledgers. The provider is responsible for its own retention, processing, and billing policies.
-
-New analysis is requested in the selected app language, English or Simplified Chinese. Existing advice and source evidence are preserved during upgrades. Previously saved advice is shown in its original language. Changing the app language does not translate it or issue a paid request. Original conversation content remains in its original language.
-
-## Updates
-
-Enabled update checks contact GitHub Pages and GitHub Releases. These services receive ordinary request information, such as an IP address. ContextCruise does not add conversation text, account tokens, or statistics databases to update requests. Sparkle system-profile reporting is disabled.
-
-Automatic checking is a user choice. Automatic installation is off. Beta updates require explicit opt-in and use a separate feed. The beta feed is public; no stable release is available yet.
-
-## Feedback you submit
-
-Feedback is submitted by you. Share only system and app/Codex versions, reproducible steps, and redacted screenshots. The app does not provide a validated one-click redacted diagnostic export. Do not assume an exported bundle is safe to share. Do not attach raw logs, databases, auth.json, cookies, API keys, or complete personal paths.
+Do not post session logs, databases, credentials, or identifying screenshots to public issues. See [Security](SECURITY.md).
